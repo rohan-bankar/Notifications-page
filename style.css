@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+    background-color: hsl(210, 60%, 98%);
+}
+
+.container{
+    margin: 10px 380px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.user-1,
+.user-2,
+.user-3,
+.user-4,
+.user-5,
+.user-6,
+.user-7{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+.notification-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+.user-1-notification,
+.user-2-notification,
+.user-3-notification,
+.user-4-notification,
+.user-5-notification,
+.user-6-notification,
+.user-7-notification,
+.time-stamp{
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.time-stamp{
+    color: hsl(219, 14%, 63%);
+}
+.user-2,
+.user-1,
+.user-3{
+    background-color: hsl(210, 60%, 98%);
+}
+
+.comment:hover{
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.profile,
+.chess-img{
+    width: 50px;
+    height: 50px;
+}
+
+.comment{
+    width: 75%;
+    margin-left: 90px;
+    padding: 10px;
+}
+
+strong{
+    color: hsl(224, 21%, 14%);
+}
+
+strong:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+span{
+    color:  hsl(1, 90%, 64%);
+}
+
+.chess-img{
+    position: relative;
+    left: 170px;
+}
+
+.notification{
+    position: relative;
+    font-weight: 800;
+    font-size: 20px;
+    color: hsl(224, 21%, 14%);
+}
+
+.notification-count{
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 130px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.read-link{
+    position: absolute;
+    right: 400px;
+}
+
+.read-link:hover{
+    cursor: pointer;
+    color: hsl(224, 21%, 14%);
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        margin: 20px;
+        font-size: 11px;
+    }
+
+    .comment{
+        width: 60%;
+    }
+
+    .chess-img{
+        left: 10px;
+    }
+
+    .profile,
+.chess-img{
+    width: 40px;
+    height: 40px;
+}
+
+.notification{
+    font-size: 16px;
+}
+
+.notification-count{
+    width: 15px;
+    height: 15px;
+    left: 110px;
+}
+
+.read-link{
+    right: 50px;
+    top: 50px;    
+}
+
+}
